@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --clr-dark: #1b1f3b;
+    --clr-font: #e8e8e8;
+    --clr-primary: #454ade;
+    --clr-secondary: #ceff1a;
+    --clr-accent: #30358d;
+    font-size: 10px;
+}
+
+
+body{
+    font-size: 1.6rem;
+    font-family: "Inter";
+    background-color: var(--clr-dark);
+    color: var(--clr-font);
+
+}
+
+
+button{
+    color: var(--clr-secondary);
+    background-color: transparent;
+    border: 3px solid var(--clr-secondary);
+    border-radius: 1.8rem;
+    width: 30rem;
+    height: 7rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 900;
+    font-size: 4rem;
+    transition-property: background-color color box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    
+    &:hover, &:active, &:focus{
+        outline: none;
+        cursor: pointer;
+        background-color: #ceff1a;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        color: var(--clr-accent)
+    }
+
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.logo{
+    position: absolute;
+    height: 7rem;
+    left: 2rem;
+    top: 2rem;
+}

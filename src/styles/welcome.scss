@@ -1,0 +1,53 @@
+
+
+.welcome{
+    background-color: var(--clr-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .welcome-header{
+        text-align: center;
+
+        .welcome-header__logo{
+            animation-name: fly-in;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-delay: 0s;
+            width: 12.5rem;
+        }
+    
+        .welcome-header__heading{
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            animation-name: fly-in;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.2s;
+            animation-fill-mode: both;
+            margin-bottom: 10rem;
+            margin-top: 4rem;
+        }
+        
+        .welcome-header__button{
+            animation-name: fly-in;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.4s;
+            animation-fill-mode: both;
+        }
+    }
+
+}
+
+@keyframes fly-in{
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
